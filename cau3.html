@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Enter a: ");
+        let b = +prompt("Enter b: ");
+        let c = +prompt("Enter c: ")
+
+        let minN = 1000;
+        if(a < minN){
+            minN = a;
+        } else if(b < minN){
+            minN = b;
+        } else if(c < minN){
+            minN = c;
+        }
+
+        document.write(minN);
+
+    </script>
+</body>
+</html>

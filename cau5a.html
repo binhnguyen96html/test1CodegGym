@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function canhTamGiac(){
+            let a = +prompt("Enter a: ");
+            let b = +prompt("Enter b: ");
+            let c = +prompt("Enter c: ");
+            let s = (a+b+c)/2;
+            let area = 0;
+            if( (a+b)>c){
+                area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+            } else if((a+c)>b){
+                area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+            }if( (c+b)>a){
+                area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+            }
+            document.write(area);
+        }
+
+        
+        function demSo(){
+            let x = +prompt("Enter x: ")
+            let mang = [];
+            let numbers = +prompt("Enter numbers: ");
+            let totalOfX = 0;
+            while(numbers > 0 ){
+                let n = +prompt("Enter n: ");
+                numbers--;
+                mang.push(n);
+                if(x==n){
+                    totalOfX++;
+                }
+            }
+            document.write(mang + "<br>");
+            document.write("total of x: " + totalOfX);
+        }
+
+        function soLonThu2(){
+            let mang = [];
+            let numbers = +prompt("Enter numbers: ");
+            let max1 = 0;
+            let max2 = 0;
+            while(numbers > 0 ){
+                let n = +prompt("Enter n: ");
+                numbers--;
+                mang.push(n);
+                if(max1 < n){
+                    max2 = max1;
+                    max1 = n;
+                }
+            }
+            document.write(mang + "<br>");
+            document.write(max2);
+        }
+
+
+    </script>
+</body>
+</html>
